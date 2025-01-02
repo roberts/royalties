@@ -146,8 +146,8 @@ contract SosoSplitter is Ownable {
         uint wallet2Share = (msg.value * 30) / 100;
         uint wallet3Share = msg.value - wallet1Share - wallet2Share;
 
-        SolidityWizard.transfer(wallet1Share);
-        DrewRoberts.transfer(wallet2Share);
-        WebAppTeam.transfer(wallet3Share);
+        Soso.transfer(wallet1Share);
+        Swamp.transfer(wallet2Share);
+        Charity.transfer(wallet3Share);
     }
 }
