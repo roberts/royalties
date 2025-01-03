@@ -130,8 +130,8 @@ contract SosoSplitter is Ownable {
 
     constructor() {}
 
-    function setWebAppTeamWallet(address payable _wallet) external onlyOwner {
-        WebAppTeam = _wallet;
+    function setSwampWallet(address payable _wallet) external onlyOwner {
+        Swamp = _wallet;
     }
 
     function sendStuckETH() external onlyOwner {
